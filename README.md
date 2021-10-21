@@ -1,11 +1,9 @@
-# Ubuntu Set
+# This script install applications for Ubuntu
 
 [![Build](https://github.com/lavrenov/ubuntu-set/workflows/Build/badge.svg)](https://github.com/lavrenov/ubuntu-set)
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/lavrenov/ubuntu-set?label=version)](https://github.com/lavrenov/ubuntu-set)
 [![GitHub repo size](https://img.shields.io/github/repo-size/lavrenov/ubuntu-set)](https://github.com/lavrenov/ubuntu-set)
 [![GitHub last commit](https://img.shields.io/github/last-commit/lavrenov/ubuntu-set)](https://github.com/lavrenov/ubuntu-set/commits/main)
-
-This script install base applications
 
 ## System requirements
 
@@ -20,6 +18,7 @@ The script is tested on **Ubuntu 18.04, 20.04**
 - Install applications from `apps` directory:
   - Google Chrome
   - FileZilla
+  - Flameshot
   - Git
   - Inkscape
   - JetBrains Toolbox
