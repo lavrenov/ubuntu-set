@@ -48,4 +48,4 @@ Add your script to `apps` directory.
 1. **Clone repository** `git clone https://github.com/lavrenov/ubuntu-set.git ubuntu-set`
 2. **Go to folder** `cd ubuntu-set`
 3. **Set permissions for all \*.sh files** `find -name '*.sh' -type f -exec chmod ugo+x {} ';'`
-4. **Run:** `sudo ./install.sh [username]`
+4. **Run** `sudo ./install.sh [username]`

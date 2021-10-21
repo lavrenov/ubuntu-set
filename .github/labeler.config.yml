@@ -1,0 +1,15 @@
+build:
+  - .github/**/*
+  - .gitignore
+
+apps:
+  - apps/**/*
+
+utils:
+  - utils/**/*
+
+source:
+  - install.sh
+
+documentation:
+  - README.md
