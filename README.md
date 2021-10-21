@@ -25,6 +25,7 @@ The script is tested on **Ubuntu 18.04, 20.04**
   - KeePassXC
   - Krita
   - LibreOffice
+  - Lollypop
   - qBittorrent
   - Sublime Text
   - Telegram
