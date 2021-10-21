@@ -31,7 +31,9 @@ The script is tested on **Ubuntu 18.04, 20.04**
   - Telegram
   - Totem
   - Gnome Tweak Tool
+  - XnView
   - Yandex Disk
+  - Youtube-dl
   - Zoom
 - Clean
 

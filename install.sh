@@ -42,7 +42,7 @@ echo "===========================================" >> "$LOG"
 date +"Finished - %F %T" >> "$LOG"
 echo "===========================================" >> "$LOG"
 
-errors=`cat "$LOG" | grep "E:"`
+errors=`cat "$LOG" | grep -E "E:|error:"`
 if [[ -n "${errors}" ]]; then
     echo "Installation finished with errors"
     exit 1
