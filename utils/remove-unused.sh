@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get purge seahorse -y
-apt-get purge firefox -y
+apt-get purge firefox firefox-* -y
 
 SNAP=`df | grep snapd | awk '{print $6}'`
 if [ $SNAP ]
