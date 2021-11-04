@@ -45,5 +45,6 @@ echo "===========================================" &>> "$LOG"
 errors=`cat "$LOG" | grep -E "E:|error:"`
 if [[ -n "${errors}" ]]; then
     echo "Installation finished with errors"
+    cat "$LOG"
     exit 1
 fi
