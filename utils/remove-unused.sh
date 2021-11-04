@@ -6,20 +6,17 @@ apt-get purge firefox firefox-* -y
 SNAP=`df | grep snapd | awk '{print $6}'`
 if [ $SNAP ]
 then
-  list=(`snap list | awk '{print $1}' | tr "\n" " "`)
+  list=(`snap list | grep -v "core" | awk '{print $1}' | tr "\n" " "`)
   unset "list[0]"
 
   for item in ${list[@]}
   do
     if [[ "$item" != "snapd" ]]
     then
-      if [ -z `$item | grep "core"` ]
-      then
-        snap remove $item
-      fi
+      snap remove $item
     fi
   done
-  snap remove core18
+  snap remove `snap list | grep "core"`
 
   umount -l $SNAP
   apt-get autoremove --purge snapd gnome-software-plugin-snap -y
