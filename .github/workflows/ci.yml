@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install
-        run: find -name '*.sh' -type f -exec chmod ugo+x {} ';' && sudo ./install.sh root && sudo ./utils/fix-control-center.sh && sudo ./utils/fix-ryzen-freezes.sh
+        run: find -name '*.sh' -type f -exec chmod ugo+x {} ';' && sudo ./install.sh root
 
   install_ubuntu_20:
     runs-on: ubuntu-20.04
@@ -21,4 +21,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install
-        run: find -name '*.sh' -type f -exec chmod ugo+x {} ';' && sudo ./install.sh root && sudo ./utils/fix-control-center.sh && sudo ./utils/fix-ryzen-freezes.sh
+        run: find -name '*.sh' -type f -exec chmod ugo+x {} ';' && sudo ./install.sh root
